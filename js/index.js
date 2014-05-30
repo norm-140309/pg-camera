@@ -30,8 +30,8 @@ var app = {
     },
     takePicture: function() {
         navigator.camera.getPicture(function(imageURI) {
-            alert(imageURI);
-            //app.upload(imageURI);
+            //alert(imageURI);
+            app.upload(imageURI);
         },
                 function(message) {
                     alert(message);
@@ -40,8 +40,8 @@ var app = {
                     quality: 80,
                     destinationType: Camera.DestinationType.FILE_URI
                 })
-    }
-    /*,
+    },
+    
     upload: function(fileURL) {
         var win = function(r) {
             console.log("Code = " + r.responseCode);
@@ -69,5 +69,5 @@ var app = {
         var ft = new FileTransfer();
         ft.upload(fileURL, encodeURI("http://pg-camera.net/api/upload.php"), win, fail, options);
     }
-*/
+
 };
