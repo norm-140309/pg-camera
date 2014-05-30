@@ -1,4 +1,4 @@
-/*
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -31,8 +31,7 @@ var app = {
     },
     takePicture: function() {
         navigator.camera.getPicture(function(imageURI) {
-            //alert(imageURI);
-            app.upload(imageURI);
+            alert(imageURI);
         },
                 function(message) {
                     alert(message);
@@ -43,8 +42,8 @@ var app = {
                 })
     }
 };
- * 
- */
+
+/*
 var win = function(r) {
     console.log("Code = " + r.responseCode);
     console.log("Response = " + r.response);
@@ -71,3 +70,5 @@ var fileURL = "file://sdcard/DCIM/Camera/1399744340217.jpg";
 var ft = new FileTransfer();
 ft.upload(fileURL, encodeURI("http://pg-camera.net/api/upload.php"), win, fail, options);
 
+ * 
+ */
