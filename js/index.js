@@ -1,4 +1,4 @@
-
+/*
 var app = {
     // Application Constructor
     initialize: function() {
@@ -42,8 +42,9 @@ var app = {
                 })
     }
 };
+ * 
+ */
 
-/*
 var win = function(r) {
     console.log("Code = " + r.responseCode);
     console.log("Response = " + r.response);
@@ -66,9 +67,8 @@ params.value1 = "test";
 params.value2 = "param";
 
 options.params = params;
-var fileURL = "file://sdcard/DCIM/Camera/1399744340217.jpg";
+//var fileURL = "file:///sdcard/DCIM/Camera/1399744340217.jpg";
+var fileURL = "file:///storage/emulated/0/Android/data/com.PhoneGapCameraApp/cache/1401420349647.jpg";
 var ft = new FileTransfer();
 ft.upload(fileURL, encodeURI("http://pg-camera.net/api/upload.php"), win, fail, options);
-
- * 
- */
+alert("uploading: "+fileURL);
