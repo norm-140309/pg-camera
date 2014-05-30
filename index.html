@@ -39,7 +39,7 @@
             options.params = params;
 
             var ft = new FileTransfer();
-            ft.upload(imageURI, encodeURI("http://pg-camera.cinchcms.net/api/upload.php?site=pg-camera&folder=images"), win, fail, options);
+            ft.upload(imageURI, encodeURI("http://pg-camera.cinchcms.net/api/upload.php"), win, fail, options);
         }
 
         function win(r) {
