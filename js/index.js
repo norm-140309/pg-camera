@@ -69,6 +69,5 @@ params.value2 = "param";
 options.params = params;
 var fileURL = "file://sdcard/DCIM/Camera/1399744340217.jpg";
 var ft = new FileTransfer();
-onDeviceReady: function() {
-    ft.upload(fileURL, encodeURI("http://pg-camera.net/api/upload.php"), win, fail, options);
-}
+ft.upload(fileURL, encodeURI("http://pg-camera.net/api/upload.php"), win, fail, options);
+
