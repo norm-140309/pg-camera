@@ -74,7 +74,7 @@ function onDeviceReady() {
     options.params = params;
 
     var ft = new FileTransfer();
-    ft.upload(FileEntry.toURL(fileURL), encodeURI("http://pg-camera.net/api/upload.php"), win, fail, options);
+    ft.upload(FileEntry.toURL(fileURL), encodeURI("http://pg-camera.cinchcms.net/api/upload.php"), win, fail, options);
     alert("uploading: "+fileURL);
 }
 
