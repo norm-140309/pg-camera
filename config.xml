@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "PhoneGap Camera App"
+        versionCode = "1" 
+        version     = "1.00" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>PhoneGap Camera App</name>
+
+    <description>
+        Testing the camera and file upload plugins.
+    </description>
+
+    <author href="http://www.cinchcms.net" email="nglomski@gmail.com">
+        Norm Glomski
+    </author>
+
+    <preference name="phonegap-version" value="3.3.0" />
+    
+    <access origin="*" />
+    
+    <preference name="permissions" value="none"/>
+    
+    <gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
+
+
+    <icon src="img/pg-camera.png" />
+
+</widget>
